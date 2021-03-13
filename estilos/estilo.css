@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.container .card__top {
+  margin-top: 35px;
+  padding: 2%;
+  border: 1px solid #c0c0c0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  min-width: 70%;
+}
+
+.container .card__top:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .card__top .texto__simulacao {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4682b4;
+}
+
+.container .card__top .texto__simulacao h3 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.container .card__top .inputs__entrada__simulacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .card__top .inputs__entrada__simulacao .inputs__simulacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .card__top .inputs__entrada__simulacao .inputs__simulacao > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.container .card__top .inputs__entrada__simulacao .inputs__simulacao > div label {
+  padding-bottom: 10px;
+}
+
+.container .card__top .inputs__entrada__simulacao .inputs__simulacao > div > input {
+  padding: 5px 50px 5px 5px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+}
+
+.container .card__top .inputs__entrada__simulacao .inputs__simulacao > div > input:focus {
+  border: none;
+}
+
+.container .card__top .inputs__entrada__simulacao .btn__simular {
+  margin: 10px;
+  padding: 10px;
+  color: #4682b4;
+  background-color: transparent;
+  border: 1px solid #4682b4;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .card__top .inputs__entrada__simulacao .btn__simular:hover {
+  background-color: #4682b4;
+  color: white;
+}
+
+.container .resultado {
+  margin-top: 35px;
+  padding: 2%;
+  border: 1px solid #c0c0c0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  min-width: 70%;
+}
+
+.container .resultado:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .resultado .texto__simulacao {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4682b4;
+}
+
+.container .resultado .texto__simulacao h3 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.container .resultado .campos__resultado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .resultado .campos__resultado > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.container .resultado .campos__resultado > div label {
+  padding-bottom: 10px;
+}
+
+.container .resultado .campos__resultado > div > input {
+  padding: 5px 50px 5px 5px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+}
+
+.container .resultado .campos__resultado > div > input:focus {
+  border: none;
+}
+
+.container .conteudo__tbl {
+  border: 1px solid;
+  margin-top: 35px;
+  padding: 2%;
+  border: 1px solid #c0c0c0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  min-width: 700px;
+  text-align: center;
+}
+
+.container .conteudo__tbl table {
+  width: 100%;
+}
+
+.container .conteudo__tbl table tbody {
+  text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+  .inputs__simulacao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .inputs__simulacao > div {
+    width: 100%;
+  }
+  .campos__resultado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .campos__resultado > div {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

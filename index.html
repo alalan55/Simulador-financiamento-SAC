@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    <title>Exercício - Módulo I</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card__top">
+
+            <div class="texto__simulacao">
+                <h3>Simulação de financiamento SAC</h3>
+            </div>
+
+            <div class="inputs__entrada__simulacao">
+
+                <div class="inputs__simulacao">
+                    <div class="valor">
+                        <label for="valor">Valor</label>
+                        <input type="text" id="valor">
+                    </div>
+
+                    <div class="prazo">
+                        <label for="prazo">Prazo(anos)</label>
+                        <input type="text" id="prazo">
+                    </div>
+
+                    <div class="jurosAno">
+                        <label for="juros__ano">Juros ao ano</label>
+                        <input type="number" id="juros__ano" step=".01">
+                    </div>
+                </div>
+
+
+                <button class="btn__simular">Simular</button>
+            </div>
+        </div>
+
+        <div class="resultado">
+            <div class="texto__simulacao">
+                <h3>Resultado</h3>
+            </div>
+            <div class="campos__resultado">
+                <div class="prazo_resultado">
+                    <label for="prazo_res">Prazo (meses):</label>
+                    <input type="text" id="prazo_res" readonly>
+                </div>
+
+                <div class="juros_mes">
+                    <label for="juros__ao__mes">Juros ao mês</label>
+                    <input type="text" id="juros__ao__mes" readonly>
+                </div>
+
+                <div class="juros__acumlados">
+                    <label for="juros__acl">Juros acumulados</label>
+                    <input type="text" id="juros__acl" readonly>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="conteudo__tbl">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="title__tbl">Prestação</th>
+                        <th class="title__tbl">Armotização</th>
+                        <th class="title__tbl">Juros</th>
+                        <th class="title__tbl">Total</th>
+                    </tr>
+
+                </thead>
+                <tbody class="body__table"></tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+
+    <script src="./js/logic.js"></script>
+</body>
+
+</html>

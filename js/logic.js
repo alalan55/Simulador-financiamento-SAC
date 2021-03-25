@@ -24,6 +24,7 @@ var tabelaHead = `
 
                    </thead>
 `
+var tbl = ``;
 
 const anosEmMeses = () => {
     var anos = campoPrazo.value;
@@ -59,14 +60,14 @@ const calcularAmortizacoes = () => { //Parcelas
 
 }
 const preencherTabela = () => {
-
+    corpoTabela.innerHTML = "";
     for (var i = 0; i < anosEmMeses(); i++) {
         var jurosInicial = Number(campoValor.value) - (i * (+calcularAmortizacoes()));
         let juros = jurosInicial * calcularJurosMensais();
         console.log()
         let total = (+calcularAmortizacoes()) + juros;
 
-        var tbl = `
+         tbl = `
         <tr>
         <td class="tbl__prestacao">${i}</td>
         <td class="tbl__armotizacao">${calcularAmortizacoes()}</td>
@@ -93,7 +94,6 @@ btnCalcular.addEventListener("click", () => {
     preencherInputsSaida();
     preencherTabela();
     jurosAcumuladosValor();
-
 });
 
 

@@ -10,6 +10,28 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  height: 60px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .logo {
+  color: #4682b4;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;

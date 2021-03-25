@@ -9,6 +9,21 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
+header{
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    nav{
+        display: flex;
+        justify-content: center;
+        .logo{
+            color: #4682b4;
+            line-height: 60px;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    }
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -42,7 +57,6 @@ html {
             }
         }
         .inputs__entrada__simulacao {
-            // border: 1px solid red;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -68,6 +82,14 @@ html {
                             
                         }
                     }
+                    // & > input[type=number]::-webkit-inner-spin-button,
+                    //     input[type=number]::-webkit-outer-spin-button{
+                    //    // appearance: none;
+                      
+                    // }
+                    // & > input[type="number"]{
+                    //     // background-color: red;
+                    // }
                 }
             }
             .btn__simular {
@@ -79,8 +101,7 @@ html {
                 cursor: pointer;
                 border-radius: 5px;
                 transition: 0.3s;
-                // width: 100%;
-
+    
                 &:hover {
                     background-color: #4682b4;
                     color: white;
@@ -149,25 +170,10 @@ html {
         text-align: center;
     
         table {
-          //  border: 1px solid red;
             width: 100%;
-
-            thead {
-              //  border: 1px solid;
-                tr {
-                  //  border: 1px solid;
-                    th {
-                //        border: 1px solid;
-                    }
-                }
-            }
-
             tbody{
-             //   border: 1px solid;
                 text-align: center;
-                td{
-                   // border: 1px solid;
-                }
+                
             }
         }
     }
@@ -192,11 +198,6 @@ html {
         & > div {
             width: 100%;
         }
-    }
-
-    .conteudo__tbl{
-    //    max-width: 50%;
-    
     }
     
 }
